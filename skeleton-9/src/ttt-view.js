@@ -1,5 +1,9 @@
 class View {
-  constructor(game, el) {}
+  constructor(game, el) {
+    this.game = game;
+    this.el = el;
+    
+  }
   
   setupBoard() {
     const ul = document.createElement("ul");
@@ -9,9 +13,9 @@ class View {
         const li = document.createElement("li");
         li.setAttribute("pos", [i, j]);
         ul.append(li);
-      }
-    }
-  }
+      };
+    };
+  };
   
   bindEvents() {}
 
