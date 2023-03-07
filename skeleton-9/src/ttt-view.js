@@ -23,13 +23,13 @@ class View {
   
   bindEvents() {
   // event listener
-  this.el.addEventListener("click", this.handleClick);
+    this.el.addEventListener("click", this.handleClick);
   }
 
   handleClick(e) {
     // the actual event
     let a = e.target;
-    console.log(a)
+    console.log(a.pos);
   }
 
   makeMove(square) {
