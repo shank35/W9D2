@@ -7,7 +7,10 @@ class View {
   
   setupBoard() {
     const ul = document.createElement("ul");
-    
+    ul.style.listStyle = "none";
+    ul.style.display = "flex";
+    ul.style.flexWrap = "wrap";
+
     for(let i = 0; i < 3; i++){
       for(let j = 0; j < 3; j++){
         const li = document.createElement("li");
