@@ -25,7 +25,7 @@ eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\
   \*************************/
 /***/ ((module) => {
 
-eval("class View {\n  constructor(game, el) {\n    this.game = game;\n    this.el = el;\n    this.setupBoard();\n  }\n  \n  setupBoard() {\n    const ul = document.createElement(\"ul\");\n    ul.style.listStyle = \"none\";\n    ul.style.display = \"flex\";\n    ul.style.flexWrap = \"wrap\";\n\n    for(let i = 0; i < 3; i++){\n      for(let j = 0; j < 3; j++){\n        const li = document.createElement(\"li\");\n        li.setAttribute(\"pos\", [i, j]);\n        ul.append(li);\n      };\n    };\n    this.el.append(ul);\n  };\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n  \n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack://skeleton-9/./src/ttt-view.js?");
+eval("class View {\n  constructor(game, el) {\n    this.game = game;\n    this.el = el;\n    this.setupBoard();\n  }\n  \n  setupBoard() {\n    const ul = document.createElement(\"ul\");\n    ul.style.listStyle = \"none\";\n    ul.style.display = \"flex\";\n    ul.style.flexWrap = \"wrap\";\n\n    for(let i = 0; i < 3; i++){\n      for(let j = 0; j < 3; j++){\n        const li = document.createElement(\"li\");\n        li.setAttribute(\"pos\", [i, j]);\n        ul.append(li);\n      };\n    };\n    this.el.append(ul);\n  };\n  \n  bindEvents() {\n  // event listener\n  this.el.addEventListener(\"click\", this.handleClick);\n  }\n\n  handleClick(e) {\n    // the actual event\n    let a = e.target;\n    console.log(a)\n  }\n\n  makeMove(square) {\n\n  }\n  \n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack://skeleton-9/./src/ttt-view.js?");
 
 /***/ }),
 

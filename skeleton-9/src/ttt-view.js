@@ -21,11 +21,20 @@ class View {
     this.el.append(ul);
   };
   
-  bindEvents() {}
+  bindEvents() {
+  // event listener
+  this.el.addEventListener("click", this.handleClick);
+  }
 
-  handleClick(e) {}
+  handleClick(e) {
+    // the actual event
+    let a = e.target;
+    console.log(a)
+  }
 
-  makeMove(square) {}
+  makeMove(square) {
+
+  }
   
 }
 
