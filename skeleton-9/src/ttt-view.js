@@ -2,7 +2,7 @@ class View {
   constructor(game, el) {
     this.game = game;
     this.el = el;
-    
+
   }
   
   setupBoard() {
@@ -15,6 +15,7 @@ class View {
         ul.append(li);
       };
     };
+    return ul;
   };
   
   bindEvents() {}
