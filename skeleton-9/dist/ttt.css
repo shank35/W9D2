@@ -1,3 +1,20 @@
-li[data-columns="3"]{
-    width: 200px
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    justify-content: space-around;
+    border: 5px solid black;
+}
+
+li {
+    width: 50px;
+    color: aqua;
+    height: 50px;
+    border: 5px solid black;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+    color: brown;
 }

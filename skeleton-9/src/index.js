@@ -5,9 +5,10 @@ const Game = require("../ttt_node/game.js");
 
 
 const game = new Game();
-const view = new View();
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".ttt");
+  const view = new View(game, container);
 });
